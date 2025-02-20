@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Choice Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container quiz-container">
+        <h1 class="text-center">Choose Your Favorite Image</h1>
+        <div id="quiz">
+            <div class="quiz-question">Which image do you like more?</div>
+            <img src="https://via.placeholder.com/300x200?text=Image+1" alt="Image 1" class="quiz-image" id="image1" onclick="selectImage('image1')">
+            <img src="https://via.placeholder.com/300x200?text=Image+2" alt="Image 2" class="quiz-image" id="image2" onclick="selectImage('image2')">
+            <button class="btn btn-primary mt-3" onclick="submitQuiz()">Submit</button>
+        </div>
+        <div id="result" class="quiz-result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
